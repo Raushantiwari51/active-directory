@@ -18,7 +18,7 @@ $objDomain = New-Object System.DirectoryServices.DirectoryEntry
 
 $Searcher.SearchRoot = $objDomain
 
-$Searcher.filter="samAccountType=805306368"
+$Searcher.filter="samAccountType=805306368"  #here you can search with atribute name like "name=nested_group" etc 
 
 Result = $Searcher.FindAll()
 
